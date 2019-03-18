@@ -1,0 +1,38 @@
+<a routerLink="/search?Q=cidade">
+    <div class="card">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="grau">
+                    <span class="grau-number"> {{humidade}}°С </span>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="cidade">
+                    <span class="cidade-nome"> São Paulo, SP </span>
+                    <span class="cidade-bandeira"> X </span>
+                </div>
+
+                <div class="temperatura">
+                    <div class="temp-max"> 
+                        <span> Máx </span>
+                        <span class="grau-number-max"> 23.5°С </span>
+                    </div>
+                    <div class="temp-min">
+                        <span> Min </span>
+                        <span class="grau-number-min"> 23.5°С </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="tempo">
+                    <span class="icon"> X </span>
+                    <span class="descricao"> Sky is clear </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<router-outlet></router-outlet>

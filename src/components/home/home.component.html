@@ -1,0 +1,72 @@
+<div>
+    <div class="row-home">
+      <div class="home-search">
+        <div class="title-search">
+          <h4>WEATHER IN YOUR CITY</h4>
+        </div>
+  
+        <div class="search">
+          <div class="form-group">
+            <input type="text" [(ngModel)]="cidade" class="form-control" placeholder="Your city name"/>
+           
+            <div class="button">
+                <button (click)=this.data.previsaoTempo(); class="button-icon">
+                    <i class=" ion-md-search" > </i > 
+                    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"> </script>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-tempo" *ngIf="this.user.temperatura">
+      <a routerLink="/detalhes">
+        <div class="card">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="grau">
+                        <span class="grau-number"> {{this.user.temperatura}}°С </span>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                    <div class="cidade">
+                        <span class="cidade-nome"> {{this.user.cidade}}, {{this.user.uf}}</span>
+                        <span class="cidade-bandeira">
+                            <img class="weatherIcon" src="{{this.user.uficon}}">
+                        </span>
+                    </div>
+    
+                    <div class="temperatura">
+                        <div class="temp-max"> 
+                            <span> Máx </span>
+                            <span class="grau-number-max"> {{this.user.maxima}}°С </span>
+                        </div>
+                        <div class="temp-min">
+                            <span> Min </span>
+                            <span class="grau-number-min"> {{this.user.minima}}°С </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                    <div class="tempo">
+                      
+                        <span class="desc-icon" > 
+                          <img class="weatherIcon" src="{{this.user.descicon}}">
+                        </span>
+                        <span class="descricao"> {{this.user.descricao}} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>
+    </div>
+
+    
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+  

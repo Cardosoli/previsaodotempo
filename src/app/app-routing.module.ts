@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DetalhamentoTempoComponent } from '../components/detalhamento-tempo/detalhamento-tempo.component';
+import { HomeComponent } from '../components/home/home.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', redirectTo: '/search', pathMatch: 'full' },
+  {path: 'search', component: HomeComponent },
+  {path: 'detalhes', component: DetalhamentoTempoComponent },
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+
+export const AppRoutingModule = RouterModule.forRoot(routes);

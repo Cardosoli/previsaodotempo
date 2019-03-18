@@ -1,0 +1,213 @@
+<header>
+<div class="detalhamento-tempo">
+  <div class="detalhamento-head">
+    <div class="detalhamento-search">
+        <div class="voltar">
+            <a routerLink="/search" class="voltar-icon">
+              <i class=" ion-md-arrow-back" > </i > 
+              <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"> </script>
+            </a>
+        </div>
+      <form ng-submit="submit()" >
+          <div class="form-group">
+              <input type="text" class="form-control" ng-model="city" placeholder="Your city name"/>
+              <div class="button">
+                  <button class="button-icon">
+                    <i class=" ion-md-search" > </i > 
+                    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"> </script>
+                  </button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="previsao-text">
+    <span class="local"> Weather in {{this.user.cidadedia}}, {{this.user.ufdesc}}  </span>
+    <p class="date">{{dataAtual | date:formatar}}</p>
+  </div>
+
+  <div class="card">
+      <div class="row">
+          <div class="col-md-6">
+            <div class="card-grau">
+              <div class="grau">
+                <span class="grau-number"> {{this.user.temperatura}}°С </span>
+              </div>
+              <div class="clima">
+                  <span class="icone-clima"> 
+                      <img src="{{this.user.descicon}}">
+                  </span>
+                  <p class="descricao-clima"> {{this.user.descricao}} </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="body-temperatura">
+              <div class="temp-max"> 
+                  <span> Máx </span>
+                  <span class="grau-number-max"> {{this.user.maxima}}°С </span>
+              </div>
+              <div class="temp-min">
+                  <span> Min </span>
+                  <span class="grau-number-min"> {{this.user.minima}}°С </span>
+              </div>
+              <div class="sunrise">
+                  <span> Sunrise </span>
+                  <span class="hora"> 06:40 </span>
+              </div>
+              <div class="sunset">
+                  <span> Sunset </span>
+                  <span class="hora"> 17:45 </span>
+              </div>  
+            </div>            
+          </div>
+      </div>
+
+      <div class="descricao-dia">
+        <span class="previsao-dia"> 5 day weather forecast </span>
+        <span class="previsao-hora"> every 3 hours</span>
+      </div>
+
+      <div class="previsao-por-dia-inicial">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body-dia">
+                  <span class="data"> {{diasemana1}} {{dia1}} {{mes}} </span>
+                  <p class="horario"> 6:00 </p>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                  <div class="previsao-por-dia-body-icon">
+                    <span class="icon-tempo">
+                        <img src="{{this.user.icon1}}">
+                    </span>
+                    <span class="desc-tempo"> {{this.user.desc1}} </span>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body">
+                  <span class="grau-number-max"> {{this.user.max1}}°С </span>
+                  <span class="grau-number-min"> {{this.user.min1}}°С </span> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="previsao-por-dia">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body-dia">
+                  <span class="data"> {{diasemana2}} {{dia2}} {{mes}}  </span>
+                  <p class="horario"> 6:00 </p>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                  <div class="previsao-por-dia-body-icon">
+                    <span class="icon-tempo">
+                        <img src="{{this.user.icon2}}">
+                    </span>
+                    <span class="desc-tempo"> {{this.user.desc2}} </span>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body">
+                  <span class="grau-number-max"> {{this.user.max2}}°С </span>
+                  <span class="grau-number-min"> {{this.user.min2}}°С </span> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="previsao-por-dia">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body-dia">
+                  <span class="data"> {{diasemana3}} {{dia3}} {{mes}}  </span>
+                  <p class="horario"> 6:00 </p>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                  <div class="previsao-por-dia-body-icon">
+                    <span class="icon-tempo">
+                        <img src="{{this.user.icon3}}">
+                    </span>
+                    <span class="desc-tempo"> {{this.user.desc3}} </span>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body">
+                  <span class="grau-number-max"> {{this.user.max3}}°С </span>
+                  <span class="grau-number-min"> {{this.user.min3}}°С </span> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="previsao-por-dia">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body-dia">
+                  <span class="data"> {{diasemana4}} {{dia4}} {{mes}} </span>
+                  <p class="horario"> 6:00 </p>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                  <div class="previsao-por-dia-body-icon">
+                    <span class="icon-tempo">
+                        <img src="{{this.user.icon4}}">
+                    </span>
+                    <span class="desc-tempo"> {{this.user.desc4}} </span>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body">
+                  <span class="grau-number-max"> {{this.user.max4}}°С </span>
+                  <span class="grau-number-min"> {{this.user.min4}}°С </span> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="previsao-por-dia">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body-dia">
+                  <span class="data"> {{diasemana5}} {{dia5}} {{mes}} </span>
+                  <p class="horario"> 6:00 </p>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                  <div class="previsao-por-dia-body-icon">
+                    <span class="icon-tempo">
+                        <img src="{{this.user.icon5}}">
+                    </span>
+                    <span class="desc-tempo"> {{this.user.desc5}} </span>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="previsao-por-dia-body">
+                  <span class="grau-number-max"> {{this.user.max5}}°С </span>
+                  <span class="grau-number-min"> {{this.user.min5}}°С </span> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  
+</div>
+</header>
+
+<router-outlet></router-outlet>

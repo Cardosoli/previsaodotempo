@@ -1,0 +1,285 @@
+.detalhamento-tempo {
+    width: 100%;
+    height: 1128px;
+    background-color: #f6f6f6;
+}
+
+.detalhamento-head {
+    width: 100%;
+    height: 120px;
+    background-color: #39a3db;
+}
+
+.detalhamento-search {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 4px;
+    padding: 5px;
+    border-width: 0; 
+    width: 460px;
+    height: 48px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.button {
+    position: relative;
+    top: -43px;
+    left: 205px;
+}
+
+.previsao-text {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.local {
+    font-family: Roboto;
+    font-size: 36px;
+    color: #3c3c3c;
+}
+
+.data {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+
+
+.card {
+    width: 620px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: absolute;
+    padding: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-grau {
+    border: solid 1px #f0f0f0;
+    border-radius: 4px;
+}
+
+.grau {
+    width: 200px;
+    height: 104px;
+    background-color: #f0f0f0;
+}
+
+.clima {
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.grau-number {
+    font-size: 48px;
+    color:#3c3c3c;
+    font-weight: bold;
+    opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    
+}
+
+.descricao-clima {
+    opacity: 0.75;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3c3c3c;
+    margin-top: 0px;
+}
+
+.row {
+    display: inline-flex;
+}
+
+.body-temperatura {
+    height: 16px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+    margin-bottom: 10px;
+    margin: 25px 50px;
+}
+
+.temp-max {
+    margin-bottom: 15px;
+}
+
+.temp-min {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.sunrise {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.sunset {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.grau-number-max {
+    color: #b30000;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.grau-number-min {
+    color: #4a90e2;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.hora {
+    width: 35px;
+    height: 16px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+    margin-left: 55px;
+}
+
+.descricao-dia {
+    margin: 25px 0;
+}
+
+.previsao-dia {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.previsao-hora {
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+}
+
+.previsao-por-dia {
+    width: 616px;
+    height: 96px;
+    background-color: #ffffff;
+}
+
+.previsao-por-dia-inicial
+{
+    width: 616px;
+    height: 96px;
+    background-color: #f0f0f0;
+    border-left: 8px solid #39a3db;   
+}
+
+.data {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+}
+
+.horario {
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+}
+
+.desc-tempo {
+    opacity: 0.75;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+    margin-left: 15px;
+    float: right;
+    margin-top: 11px;
+}
+
+.previsao-por-dia-body {
+    margin: 20px;
+}
+
+.previsao-por-dia-body-dia {
+    margin: 20px;
+    width: 80px;
+}
+
+.previsao-por-dia-body-icon {
+    margin-left: 45px;
+    margin-top: 11px;
+}
+
+.voltar {
+    float: right;
+    top: 24PX;
+    left: 24PX;
+    position: ABSOLUTE;
+}
+
+.button-icon {
+    background: none;
+    border: 0;
+    font-size: 24px;
+    color: #39a3db;
+}
+
+.button-icon:focus {
+    outline: aliceblue;
+}
+
+.voltar-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
