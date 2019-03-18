@@ -11,5 +11,6 @@ export class CardTempoComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
